@@ -56,11 +56,13 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 	font-weight: bold;
 }
 .popup__menu{
-	position: relative;
 	margin: 0 50px 0 35px;
 }
 /* грід всередині попап*/
-
+.wrapper{
+	position: relative;
+	margin: 0 auto;
+}
 .popup{
 	position: absolute;
 	height: 470px;
