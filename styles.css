@@ -114,7 +114,7 @@ body {
 	overflow-x: hidden;
 	border: 5px solid gold;
 	box-shadow: 0px 0px 20px 5px gold;
-	padding: 20px 35px;
+	padding: 15px 35px;
 	opacity: 0;
 	visibility: hidden;
 	transition: all 0.8s ease 0s;
@@ -135,7 +135,7 @@ body {
 	grid-template: 1fr 1fr / 100px 100px 100px;
 	justify-content: center;
 	align-items: center;
-	gap: 50px 10px;
+	gap: 30px 10px;
 	margin: 0 -30px;
 }
 .ppp__item {
@@ -161,4 +161,46 @@ body {
 	color: #000;
 	font-size: 18px;
 	font-weight: bolder;
+}
+/* btn */
+.more-label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+}
+.more__text {
+	position: absolute;
+	text-decoration: underline;
+	right: 40px;
+	font-size: 25px;
+	font-weight: 700;
+	top: 20px;
+}
+.more__text:hover{
+	transform: scale(1.05, 1.05);
+}
+.more-button{
+	position: absolute;
+	appearance: none;
+}
+.more-button:focus {
+	border: 2px solid gold;
+	border-radius: 5px;
+	top: 402px;	
+	padding: 15px 100px;
+	left: 60px;
+	cursor: pointer;
+}
+.list__sub {
+	display: none;
+	margin-top: 30px;
+}
+.more-button:checked~.list__sub{
+	display: grid;
+}
+.more-button:checked~.more-label{
+	display: none;
+}
+.more-button:checked {
+	display: none;
 }
